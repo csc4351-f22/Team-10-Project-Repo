@@ -1,1 +1,3 @@
-blank file to start
+If you have extra time, what stretch features will you implement?
+
+The most ambitious of the "stretch" goals we have discussed is making our web application into a 'plugin' that could be directly accessed anytime the Youtube website is open on a computer. As this is a particularly complex project, this is likely something that will be done only if a good amount of the group wishes to continue the project following the classes end. Another stretch goal would be to include - when the user simply clicks the search bar - potential search terms catered towards the user's usual searches (based on cookies, if they are a repeat user) or their Google account searches.
