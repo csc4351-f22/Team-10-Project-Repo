@@ -22,17 +22,15 @@ def create_app(database, testing=False):
     Returns:
         flask app: app object with settings
     """
-    # Temporary lint ignore until server testing context is configured
-    # pylint: disable=redefined-outer-name
-    app = flask.Flask(__name__)
-    app.config['TESTING'] = testing
-    app.config.update(SECRET_KEY='12345')  # Key required for flask.session
-    app.config["SQLALCHEMY_DATABASE_URI"] = database
+    new_app = flask.Flask(__name__)
+    new_app.config['TESTING'] = testing
+    new_app.config.update(SECRET_KEY='12345')  # Key required for flask.session
+    new_app.config["SQLALCHEMY_DATABASE_URI"] = database
     db.init_app(app)
-    with app.app_context():
+    with new_app.app_context():
         db.create_all()
 
-    return app
+    return new_app
 
 
 PRODUCTION_DB = "sqlite:///YT_Sentiment_App.db"
