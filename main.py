@@ -22,6 +22,8 @@ def create_app(database, testing=False):
     Returns:
         flask app: app object with settings
     """
+    # Temporary lint ignore until server testing context is configured
+    # pylint: disable=attribute-defined-outside-init
     app = flask.Flask(__name__)
     app.config['TESTING'] = testing
     app.config.update(SECRET_KEY='12345')  # Key required for flask.session
