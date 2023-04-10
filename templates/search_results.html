@@ -54,13 +54,6 @@
 			</div>
 		</div>
 
-		<script>
-			function route_to(page) {
-				window.location.href = page
-			}
-		</script>
-
-
 	<div id="content">
 		<div class="top_header">
 			<form action="/search_results" method="GET" class="wrap">
@@ -71,6 +64,9 @@
 		</div>
 
 		<div class="all_body">
+
+			<div class="videoView">content</div>
+
 			{%for i in range(6)%}
 			<div>
 				<form method="GET" action="/video_view">

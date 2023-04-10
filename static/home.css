@@ -216,9 +216,11 @@ color: #fff;
 
 .all_body {
     position: absolute;
-    overflow-x: scroll;
+    overflow-y: scroll;
     top: 100px;
     bottom: 15px;
+    width: 100%;
+    justify-content: center;
 }
                 
 .wrap {
@@ -488,6 +490,7 @@ display: block;
         margin-top: 15px;
         margin-left: 55px;
         flex-direction: column;
+        display: flex;
         vertical-align: top;
         padding: 20px;
     }
@@ -575,6 +578,7 @@ display: block;
 
 }
 img.two {
+    background-image: url(/static/Youtube_logo.png);
     height: 50%;
     width: 50%;
   }
